@@ -1,66 +1,43 @@
-## Foundry
+# About Zealynx
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
 
-Foundry consists of:
+Zealynx Security, founded in January 2024 by Bloqarl and Sergio, specializes in smart contract audits, development, and security testing using Solidity and Rust. Our services include comprehensive smart contract audits, smart contract fuzzing, and formal verification test suites to enhance security reviews and ensure robust contract functionality. We are trusted by clients such as Shieldify, AuditOne, Bastion Wallet, Side.xyz, Possum Labs, and Aurora (NEAR Protocol-based).
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+Our team believes in transparency and actively contributes to the community by creating educational content. This includes challenges for Foundry and Rust, security tips for Solidity developers, and fuzzing materials like Foundry and Echidna/Medusa. We also publish articles on topics such as preparing for an audit and battle testing smart contracts on our blog, Bloqarl's blog, and Sergio's blog.
 
-## Documentation
+Zealynx has achieved public recognition, including a Top 5 position in the Beanstalk Audit public contest, rewarded with $8k. Our ongoing commitment is to provide value through our expertise and innovative security solutions for smart contracts.
 
-https://book.getfoundry.sh/
+<img width="700" alt="image" src="image/zealynx.png">
 
-## Usage
+---
 
-### Build
+# CTF Challenge: Decentralized Financial Platform
 
-```shell
-$ forge build
-```
+Welcome to the exciting CTF Challenge of the Decentralized Financial Platform! This challenge will immerse you in the fascinating world of decentralized finance (DeFi), testing your skills in smart contract auditing.
 
-### Test
+## What will you find in this CTF?
 
-```shell
-$ forge test
-```
+1. **Complex Smart Contracts:**
+   - **Financial Platform:** A main contract that allows users to perform various financial operations such as taking loans, depositing collateral, receiving rewards, and participating in system governance.
+   - **Mock ERC20 Tokens:** Simulated tokens representing stablecoins, rewards, and collateral.
 
-### Format
+2. **Mathematical Library:**
+   - **MathLibrary:** A library implementing essential functions for calculating interests and rewards, fundamental to the financial operations of the main contract.
 
-```shell
-$ forge fmt
-```
+## Your Mission
 
-### Gas Snapshots
+The primary goal of this CTF is to analyze and audit the smart contracts of the platform, identifying potential vulnerabilities. During your audit, pay attention to:
 
-```shell
-$ forge snapshot
-```
+- **Interest and Reward Calculation:** Ensure that the calculation functions return correct and precise values.
+- **Loan and Collateral Management:** Verify that the contract properly handles loan and collateral operations.
+- **Governance and Security:** Evaluate the security of governance functions and the correct implementation of roles and permissions.
+- **Transaction Transparency:** Ensure all transactions are transparent and traceable.
+- **Data Integrity:** Guarantee that the data stored and manipulated by the contracts is accurate and unalterable.
+- **Scalability:** Examine how the contract handles a large volume of transactions and users.
+- **Error Handling:** Ensure the contract appropriately handles errors and exceptions.
+- **Gas Efficiency:** Verify that the contract functions are efficient in gas usage.
+- **Attack Resilience:** Evaluate the contract's robustness against potential attacks such as reentrancy, overflow, and underflow.
 
-### Anvil
+This CTF is designed to challenge you and help you improve your skills in smart contract auditing. Enjoy exploring the Decentralized Financial Platform and demonstrate your expertise!
 
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+Remember, the key is in the details! 🚀
