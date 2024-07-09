@@ -129,7 +129,7 @@ contract AdvancedFinancialPlatformFuzzTest is Test {
         assertEq(remainingLoan, expectedRemainingLoan, "Remaining loan amount mismatch");
     }
 
-    function testFuzzCalculateInterest(uint256 amount, uint256 rate, uint256 timeElapsed, uint256 compoundingPeriods) public {
+    function testFuzzCalculateInterest(uint256 amount, uint256 rate, uint256 timeElapsed, uint256 compoundingPeriods) public { //@
         amount = bound(amount, 1, 1e22);
         rate = bound(rate, 1, 1e18);
         timeElapsed = bound(timeElapsed, 1, 365 days);
@@ -146,7 +146,7 @@ contract AdvancedFinancialPlatformFuzzTest is Test {
     }
 
 
-    function testPrecisionLoss(uint256 principal, uint256 rate, uint256 timeElapsed, uint256 compoundingPeriods) public {
+    function testPrecisionLoss(uint256 principal, uint256 rate, uint256 timeElapsed, uint256 compoundingPeriods) public { //@
         principal = bound(principal, 1e18, 1e22); // 1 to 10,000 tokens with 18 decimals
         rate = bound(rate, 1, 1e18); // 0 to 100% interest rate
         timeElapsed = bound(timeElapsed, 1, 365 days); // 1 day to 1 year
@@ -247,7 +247,7 @@ contract AdvancedFinancialPlatformFuzzTest is Test {
     }
 
 
-    function testFuzzCalculateReward(uint256 loanAmount, uint256 totalRewards) public {
+    function testFuzzCalculateReward(uint256 loanAmount, uint256 totalRewards) public { //@
         loanAmount = bound(loanAmount, 1, 1e22);
         totalRewards = bound(totalRewards, 1, 1e22);
 

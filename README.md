@@ -41,3 +41,85 @@ The primary goal of this CTF is to analyze and audit the smart contracts of the 
 This CTF is designed to challenge you and help you improve your skills in smart contract auditing. Enjoy exploring the Decentralized Financial Platform and demonstrate your expertise!
 
 Remember, the key is in the details! 🚀
+
+# Summary of the Tests
+
+### `testFuzzTakeLoan`
+
+- **Description:** Verifies that the loan amount taken matches the requested amount.
+- **Expected Result:** Should pass.
+- **Vulnerability Demonstrated:** No.
+
+### `testFuzzRepayLoan`
+
+- **Description:** Verifies that the remaining loan amount after a repayment matches the expected amount.
+- **Expected Result:** Should pass.
+- **Vulnerability Demonstrated:** No.
+
+### `testFuzzCalculateInterest`
+
+- **Description:** Verifies that the calculated interest is not zero.
+- **Expected Result:** Should pass.
+- **Vulnerability Demonstrated:** Yes.
+
+### `testPrecisionLoss`
+
+- **Description:** Compares the expected interest with the calculated interest to detect precision losses.
+- **Expected Result:** Should not pass.
+- **Vulnerability Demonstrated:** Yes.
+
+### `testFuzzDepositCollateral`
+
+- **Description:** Verifies that the amount of deposited collateral matches the expected amount.
+- **Expected Result:** Should pass.
+- **Vulnerability Demonstrated:** No.
+
+### `testFuzzWithdrawCollateral`
+
+- **Description:** Verifies that the amount of withdrawn collateral matches the expected amount.
+- **Expected Result:** Should pass.
+- **Vulnerability Demonstrated:** No.
+
+### `testFuzzClaimCollateralInterest`
+
+- **Description:** Verifies that the accumulated interest is reset to zero after being claimed.
+- **Expected Result:** Should pass.
+- **Vulnerability Demonstrated:** No.
+
+### `testFuzzDistributeRewards`
+
+- **Description:** Verifies that the amount of distributed rewards matches the expected amount.
+- **Expected Result:** Should pass.
+- **Vulnerability Demonstrated:** No.
+
+### `testFuzzGovernanceAction`
+
+- **Description:** Verifies that governance actions can be executed.
+- **Expected Result:** Should pass.
+- **Vulnerability Demonstrated:** No.
+
+### `testFuzzTransferOwnership`
+
+- **Description:** Verifies that the ownership transfer is executed correctly.
+- **Expected Result:** Should pass.
+- **Vulnerability Demonstrated:** No.
+
+### `testFuzzCalculateReward`
+
+- **Description:** Verifies that the calculated reward is not zero.
+- **Expected Result:** Should pass.
+- **Vulnerability Demonstrated:** Yes.
+
+### `testFuzzUpdateCollateralToken`
+
+- **Description:** Verifies that the collateral token update is executed correctly.
+- **Expected Result:** Should pass.
+- **Vulnerability Demonstrated:** No.
+
+### `testFuzzUpdateRewardToken`
+
+- **Description:** Verifies that the reward token update is executed correctly.
+- **Expected Result:** Should pass.
+- **Vulnerability Demonstrated:** No.
+
+With these changes, the tests `testFuzzCalculateInterest` and `testFuzzCalculateReward` appropriately reflect the vulnerabilities demonstrated in calculating interest and rewards.
