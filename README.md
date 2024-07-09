@@ -121,5 +121,3 @@ Remember, the key is in the details! 🚀
 - **Description:** Verifies that the reward token update is executed correctly.
 - **Expected Result:** Should pass.
 - **Vulnerability Demonstrated:** No.
-
-With these changes, the tests `testFuzzCalculateInterest` and `testFuzzCalculateReward` appropriately reflect the vulnerabilities demonstrated in calculating interest and rewards.
