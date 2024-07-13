@@ -7,7 +7,11 @@ Our team believes in transparency and actively contributes to the community by c
 
 Zealynx has achieved public recognition, including a Top 5 position in the Beanstalk Audit public contest, rewarded with $8k. Our ongoing commitment is to provide value through our expertise and innovative security solutions for smart contracts.
 
-<img width="700" alt="image" src="image/zealynx.png">
+If you're interested in learning more, we have an [educational repository](https://github.com/ZealynxSecurity/Zealynx) where we are organizing all types of resources, notes, and videos to help you continue learning about these technologies.
+
+Additionally, I would like to recommend one of our [YouTube channels](https://youtube.com/@theblockchainer?si=1ua4ZEkbap0n1oHs) where you can learn a lot about fuzzing and various tools.
+
+<img width="900" alt="image" src="image/zealynx.png">
 
 ---
 
